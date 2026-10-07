@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio & Projects - Mudasir Javid</title>
+  <meta name="description" content="Detailed engineering projects by Mudasir Javid including Groq Multi-Agent AI System, Family Record RAG Chatbot, AI Web Scraper, and SDFC Football Web App.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-wordmark">Mudasir Javid</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="resume.html" class="nav-link">Resume</a></li>
+        <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="header-actions">
+        <a href="https://www.linkedin.com/in/mudasir-javid-991b92439" target="_blank" rel="noreferrer" class="social-icon-link linkedin" aria-label="LinkedIn Profile">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.64a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28z"/></svg>
+        </a>
+        <a href="https://github.com/MUDASIR-JAVID" target="_blank" rel="noreferrer" class="social-icon-link" aria-label="GitHub Profile">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle navigation">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <ul class="mobile-menu-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="kicker">Systems & Production Work</div>
+        <h1 class="page-title">Featured Projects</h1>
+        <p class="page-lead" style="max-w: 680px;">
+          Autonomous agent frameworks, high-throughput LLM pipelines, RAG retrieval architectures, and responsive web applications.
+        </p>
+
+        <!-- Filter Segmented Control -->
+        <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 32px; background: var(--bg-secondary); padding: 4px; border-radius: 12px; width: fit-content; border: 1px solid var(--border-subtle);">
+          <button class="btn-secondary active" data-filter="all" style="font-size: 12px; padding: 6px 14px;">All Projects</button>
+          <button class="btn-secondary" data-filter="agent" style="font-size: 12px; padding: 6px 14px;">Autonomous Agents</button>
+          <button class="btn-secondary" data-filter="genai" style="font-size: 12px; padding: 6px 14px;">Generative AI & RAG</button>
+          <button class="btn-secondary" data-filter="web" style="font-size: 12px; padding: 6px 14px;">Web Applications</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: Groq Multi-Agent -->
+          <div class="project-card" data-category="agent">
+            <div class="project-top">
+              <div class="project-meta-row">
+                <span class="project-category">Multi-Agent AI</span>
+                <span style="font-family: var(--font-mono); font-size: 11px;">&lt; 1.2s roundtrip</span>
+              </div>
+              <h2 class="project-title">Groq Multi-Agent AI System</h2>
+              <p class="project-desc">
+                High-throughput multi-agent architecture leveraging Groq's LPU inference engine for real-time collaboration between specialized AI agents (Researcher, Coder, Critic, Synthesizer) with JSON schema validation.
+              </p>
+            </div>
+            <div class="project-bottom">
+              <div class="tech-list-unboxed">
+                <span class="tech-item">Python</span> · 
+                <span class="tech-item">Groq API</span> · 
+                <span class="tech-item">LangChain</span> · 
+                <span class="tech-item">FastAPI</span> · 
+                <span class="tech-item">Pydantic</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/MUDASIR-JAVID" target="_blank" class="project-link">View on GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Family Record RAG -->
+          <div class="project-card" data-category="genai">
+            <div class="project-top">
+              <div class="project-meta-row">
+                <span class="project-category">Generative AI</span>
+                <span style="font-family: var(--font-mono); font-size: 11px;">99.4% precision</span>
+              </div>
+              <h2 class="project-title">Family Record RAG Chatbot</h2>
+              <p class="project-desc">
+                Privacy-focused contextual RAG conversational system indexing family genealogical archives and historical records with semantic vector embeddings in ChromaDB and exact document citations.
+              </p>
+            </div>
+            <div class="project-bottom">
+              <div class="tech-list-unboxed">
+                <span class="tech-item">Python</span> · 
+                <span class="tech-item">LangChain</span> · 
+                <span class="tech-item">ChromaDB</span> · 
+                <span class="tech-item">Hugging Face</span> · 
+                <span class="tech-item">FastAPI</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/MUDASIR-JAVID" target="_blank" class="project-link">View on GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: AI Web Scraper -->
+          <div class="project-card" data-category="agent">
+            <div class="project-top">
+              <div class="project-meta-row">
+                <span class="project-category">Intelligent Automation</span>
+                <span style="font-family: var(--font-mono); font-size: 11px;">Playwright + LLM</span>
+              </div>
+              <h2 class="project-title">Autonomous AI Web Scraper</h2>
+              <p class="project-desc">
+                Headless browser navigation agent with automated DOM tree pruning and LLM-driven schema parsing. Extracts structured tabular datasets from dynamic JavaScript apps without manual selector tuning.
+              </p>
+            </div>
+            <div class="project-bottom">
+              <div class="tech-list-unboxed">
+                <span class="tech-item">Python</span> · 
+                <span class="tech-item">Playwright</span> · 
+                <span class="tech-item">BeautifulSoup</span> · 
+                <span class="tech-item">Pydantic</span> · 
+                <span class="tech-item">Docker</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/MUDASIR-JAVID" target="_blank" class="project-link">View on GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: AI Article Generator -->
+          <div class="project-card" data-category="genai">
+            <div class="project-top">
+              <div class="project-meta-row">
+                <span class="project-category">Generative AI</span>
+                <span style="font-family: var(--font-mono); font-size: 11px;">2,500+ words/min</span>
+              </div>
+              <h2 class="project-title">AI Article Generator & Studio</h2>
+              <p class="project-desc">
+                Automated end-to-end long-form editorial generation engine with SERP keyword analysis, multi-stage heading outline synthesis, and iterative section drafting with readability checks.
+              </p>
+            </div>
+            <div class="project-bottom">
+              <div class="tech-list-unboxed">
+                <span class="tech-item">Python</span> · 
+                <span class="tech-item">LangChain</span> · 
+                <span class="tech-item">FastAPI</span> · 
+                <span class="tech-item">Streamlit</span> · 
+                <span class="tech-item">Pandas</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/MUDASIR-JAVID" target="_blank" class="project-link">View on GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Multimodal AI Suite -->
+          <div class="project-card" data-category="genai">
+            <div class="project-top">
+              <div class="project-meta-row">
+                <span class="project-category">Generative AI</span>
+                <span style="font-family: var(--font-mono); font-size: 11px;">Vision + Whisper</span>
+              </div>
+              <h2 class="project-title">Multimodal AI Intelligence Suite</h2>
+              <p class="project-desc">
+                Integrated testbed combining computer vision OCR, Whisper speech-to-text with timestamped speaker diarization, and real-time audio generation in a minimalist responsive interface.
+              </p>
+            </div>
+            <div class="project-bottom">
+              <div class="tech-list-unboxed">
+                <span class="tech-item">Python</span> · 
+                <span class="tech-item">PyTorch</span> · 
+                <span class="tech-item">Whisper</span> · 
+                <span class="tech-item">FastAPI</span> · 
+                <span class="tech-item">React</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/MUDASIR-JAVID" target="_blank" class="project-link">View on GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: SDFC Football Kohat -->
+          <div class="project-card" data-category="web">
+            <div class="project-top">
+              <div class="project-meta-row">
+                <span class="project-category">Web Application</span>
+                <span style="font-family: var(--font-mono); font-size: 11px;">200+ active users</span>
+              </div>
+              <h2 class="project-title">SDFC Football Kohat Web App</h2>
+              <p class="project-desc">
+                Custom club management portal for SDFC Football Club Kohat. Features dynamic tournament schedules, live match countdowns, squad rosters, player stats, and admin score updates.
+              </p>
+            </div>
+            <div class="project-bottom">
+              <div class="tech-list-unboxed">
+                <span class="tech-item">React</span> · 
+                <span class="tech-item">JavaScript</span> · 
+                <span class="tech-item">Tailwind CSS</span> · 
+                <span class="tech-item">FastAPI</span> · 
+                <span class="tech-item">SQLite</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/MUDASIR-JAVID" target="_blank" class="project-link">View on GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7: Amazon Clone -->
+          <div class="project-card" data-category="web">
+            <div class="project-top">
+              <div class="project-meta-row">
+                <span class="project-category">Full-Stack Web</span>
+                <span style="font-family: var(--font-mono); font-size: 11px;">Full E-Commerce</span>
+              </div>
+              <h2 class="project-title">Amazon Clone E-Commerce Platform</h2>
+              <p class="project-desc">
+                Modern responsive e-commerce storefront with product discovery, category search, real-time cart persistence, mock checkout validation, and high-fidelity product galleries.
+              </p>
+            </div>
+            <div class="project-bottom">
+              <div class="tech-list-unboxed">
+                <span class="tech-item">React</span> · 
+                <span class="tech-item">TypeScript</span> · 
+                <span class="tech-item">Tailwind CSS</span> · 
+                <span class="tech-item">Node.js</span> · 
+                <span class="tech-item">REST API</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/MUDASIR-JAVID" target="_blank" class="project-link">View on GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-title">Mudasir Javid</div>
+          <p style="color: var(--text-secondary); max-width: 380px; line-height: 1.5;">
+            Lead AI Engineer & Full-Stack Developer specializing in Generative AI, LangChain, and high-performance Python microservices.
+          </p>
+        </div>
+        <div>
+          <div class="footer-title">Pages</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-title">Connect</div>
+          <ul class="footer-links">
+            <li><a href="https://github.com/MUDASIR-JAVID" target="_blank">GitHub Profile ↗</a></li>
+            <li><a href="https://www.linkedin.com/in/mudasir-javid-991b92439" target="_blank">LinkedIn Profile ↗</a></li>
+            <li><a href="mailto:mudasirkhan842kohat@gmail.com">Email Direct</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copyright">Copyright © 2026 Mudasir Javid. All rights reserved.</div>
+        <div class="footer-sub">Lead AI Engineer · Islamabad / Kohat, Pakistan</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
